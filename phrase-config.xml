@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<config>
+
+  <phrases>
+    <!-- 0 -->
+    <phrase>Either the username or password you entered was incorrect or
+                unknown.</phrase>
+    <phrase>Please try again.</phrase>
+    <phrase>Username:</phrase>
+    <phrase>Password:</phrase>
+    <phrase>You have been successfully logged out.</phrase>
+    <!-- 5 -->
+    <phrase>Either you are not currently logged in or your session has
+                expired due to inactivity.</phrase>
+    <phrase>Please login.</phrase>
+    <phrase>The following recipe was added to the database:</phrase>
+    <phrase>Click on the Add button to add another recipe.</phrase>
+    <phrase>You must give this recipe a name of more than three characters.</phrase>
+    <!--10 -->
+    <phrase>This recipe must have a name.</phrase>
+    <phrase>At least one ingredient must be listed.</phrase>
+    <phrase>At least one direction must be listed.</phrase>
+    <phrase>Please fix the following errors:</phrase>
+    <phrase>The above errors must be fixed before this recipe can be committed to the database.</phrase>
+    <!-- 15 -->
+    <phrase>No recipes found in database.</phrase>
+    <phrase>Please select a recipe before choosing View, Edit, or Delete.</phrase>
+    <phrase>This recipe is currently locked by</phrase>
+    <phrase>When this icon is displayed in the Lock Status column, you can click it to break the lock on a recipe being held by another session.</phrase>
+    <phrase>When this icon is displayed in the Lock Status column, you cannot change the associated recipe as it is locked by another user.</phrase>
+    <!-- 20 -->
+    <phrase>You chose not to commit to the database changes made to </phrase>
+    <phrase>.  The database remains unchanged.</phrase>
+    <phrase> was successfully edited.</phrase>
+    <phrase>The record you attempted to edit or delete is locked.  You have read-only access to the record until it is unlocked.</phrase>
+    <phrase>This entry is currently locked by</phrase>
+    <!-- 25 -->
+    <phrase>Read-only access is allowed.</phrase>
+    <phrase>Please confirm you wish to delete the recipe shown below.</phrase>
+    <phrase>Are you sure you want to irrevocably delete</phrase>
+    <phrase>from the database?</phrase>
+    <phrase>Yes</phrase>
+    <!-- 30 -->
+    <phrase>No</phrase>
+    <phrase>Choose Yes and click on the Submit button to delete the recipe shown below from the database.</phrase>
+    <phrase>Choose No and click on the Submit button avoid making any changes to the database.</phrase>
+    <phrase>You chose not to delete </phrase>
+    <phrase>from the system.  The database remains unchanged.</phrase>
+    <!-- 35 -->
+    <phrase>was successfully deleted from the system.</phrase>
+    <phrase>Search</phrase>
+    <phrase>No recipes found that match your search criteria.  Please try again.</phrase>
+    <phrase>Use the Break Lock button below to break the lock held on this record by another session of yours.</phrase>
+    <phrase>Breaking a lock is advisable only under the following circumstances:</phrase>
+    <!-- 40 -->
+    <phrase>Your computer crashed during an edit or delete sequence and you were forced to reboot.</phrase>
+    <phrase>You lost your connection to the Internet during an edit or delete sequence.</phrase>
+    <phrase>Your web browser crashed during an edit or delete sequence and you were forced to login to the application again.</phrase>
+    <phrase>You started to edit or delete an entry in the database, and used the Back button in your web browser to abort the sequence.</phrase>
+    <phrase>NOTE:  Breaking the lock will prevent the other session from committing any changes made to the entry to the database.</phrase>
+    <!-- 45 -->
+    <phrase>Having said all that, if you still want to break the lock, click on the Break Lock button below to break the lock.</phrase>
+    <phrase>Use the other buttons to navigate to other parts of the application without breaking the lock.</phrase>
+    <phrase>Break Lock</phrase>
+    <phrase>Your lock on the recipe has been successfully broken.</phrase>
+    <phrase>Choose one of the buttons below to continue.</phrase>
+    <!-- 50 -->
+    <phrase>There was a problem breaking the lock.  Please contact the application adminstrator.</phrase>
+    <phrase>View</phrase>
+    <phrase>Edit</phrase>
+    <phrase>Delete</phrase>
+    <phrase>No origins found.</phrase>
+    <!-- 55 -->
+    <phrase>Please select an entry before choose Edit or Delete.</phrase>
+    <phrase>Recipe origin to add:</phrase>
+    <phrase>was successfully added to the database.</phrase>
+    <phrase>Click on the Add button to add another origin.</phrase>
+    <phrase>Click on the Main Menu button to return to the Main Menu.</phrase>
+    <!-- 60 -->
+    <phrase>was successfully changed to</phrase>
+    <phrase>Click on the Menu button to return to the main Recipe Origin management menu.</phrase>
+    <phrase>Edit the entry you've chosen below.</phrase>
+    <phrase>Click on the Save button to commit your changes to the database.</phrase>
+    <phrase>Click on the Reset button to return the entry to its original form.  No changes are made to the database.</phrase>
+    <!-- 65 -->
+    <phrase>Click on the Menu button to return to the Recipe Origin management menu without making any changes to the database.</phrase>
+    <phrase>Click on the Main Menu button to return to the main menu without making any changes to the database.</phrase>
+    <phrase>Please confirm you wish to delete the entry shown below:</phrase>
+    <phrase>Choose Yes and click on the Submit button to delete the entry shown below from the database.</phrase>
+    <phrase>Choose No  and click on the Submit button to return to the Recipe Origin management menu without making any changes to the database.</phrase>
+    <!-- 70 -->
+    <phrase>Submit</phrase>
+    <phrase>Add</phrase>
+    <phrase>Save</phrase>
+    <phrase>Those passwords did not match.  Please try again.</phrase>
+    <phrase>Your password must be at least</phrase>
+    <!-- 75 -->
+    <phrase>characters long.  Please try again.</phrase>
+    <phrase>Your password must contain both letters and numbers.  Please try again.</phrase>
+    <phrase>Use this interface to change your login password.</phrase>
+    <phrase>Enter the new password for</phrase>
+    <phrase>again</phrase>
+    <!-- 80 -->
+    <phrase>Valid passwords meet the following criteria:</phrase>
+    <phrase>At least</phrase>
+    <phrase>characters in length.</phrase>
+    <phrase>Contain a mixture of letters and numbers.</phrase>
+    <phrase>Contain no spaces or tabs.  Spaces and tabs are removed from passwords automatically by the system and do not count towards the minimum character length specified above.</phrase>
+    <!-- 85 -->
+    <phrase>The password for</phrase>
+    <phrase>was successfully changed.</phrase>
+    <phrase>You chose not to change your password.  It remains unchanged.</phrase>
+    <phrase>Cancel</phrase>
+    <phrase>No food types found.</phrase>
+    <!-- 90 -->
+    <phrase>Food type to add:</phrase>
+    <phrase>Click on the Add button to add another food type.</phrase>
+    <phrase>Click on the Menu button to return to the main Food Type management menu.</phrase>
+    <phrase>Click on the Menu button to return to the Food Type management menu without making any changes to the database.</phrase>
+    <phrase>Choose No  and click on the Submit button to return to the Food Type management menu without making any changes to the database.</phrase>
+    <!-- 95 -->
+    <phrase>Please search for at least one word, letter, phrase, or characteristic.</phrase>
+    <phrase></phrase>
+    <phrase></phrase>
+    <phrase></phrase>
+    <phrase></phrase>
+    
+
+    
+  </phrases>
+</config>
+  

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<config>
+
+  <scripts>
+    <menu>menu.cgi</menu>
+    <origin>origin.cgi</origin>
+    <type>type.cgi</type>
+    <add>add.cgi</add>
+    <browse>browse.cgi</browse>
+    <view>view.cgi</view>
+    <delete>delete.cgi</delete>
+    <edit>edit.cgi</edit>
+    <search>search.cgi</search>
+    <search_results>results.cgi</search_results>
+    <auth>auth.cgi</auth>
+    <expired>expired.cgi</expired>
+    <break_lock>break_lock.cgi</break_lock>
+    <read_only>read-only.cgi</read_only>
+    <logout>logout.cgi</logout>
+    <password>change_password.cgi</password>
+  </scripts>
+
+  <host>
+    <hostname>localhost</hostname>
+    <port>80</port>
+  </host>
+
+  <cookies>
+      <id_cookie>recipe_user_id</id_cookie>
+      <session_cookie>recipe_user_session</session_cookie>
+  </cookies>
+            
+
+  <cgi_path>recipes</cgi_path>
+
+  <password>
+    <minimum_length>6</minimum_length>
+  </password>
+
+  <locks>
+    <timeout>900</timeout>
+  </locks>
+        
+  <author>djb@bogen.org</author>
+
+  <display>
+    <rows_to_display>15</rows_to_display>
+  </display>
+
+  <titles>
+    <main_menu>Recipe Management</main_menu>
+    <page>Bogen Family Recipes</page>
+    <origin>Recipe Origin Management</origin>
+    <type>Recipe Type Management</type>
+    <browse>Browse/Manage Recipes</browse>
+    <search>Search/Manage Recipes</search>
+    <add>Add Recipe</add>
+    <view>Recipe from the Kitchen of the Bogens</view>
+    <delete>Delete Recipe</delete>
+    <edit>Edit Recipe</edit>
+    <auth>Recipe Management Login</auth>
+    <expired>Access Denied</expired>
+    <read_only>Read Only Access</read_only>
+    <break_lock>Break Your Lock</break_lock>
+    <logout>Logout</logout>
+    <password>Change Your Password</password>
+  </titles>
+
+  <images>
+      <small_lock>small_lock.gif</small_lock>
+      <small_break_lock>small_break_lock.gif</small_break_lock>
+  </images>
+
+  <meta>
+    <tag>
+     <name>Copyright</name>
+     <content>Copyright 2004, David Bogen.  All Rights Reserved</content>
+    </tag>
+    <tag>
+      <name>MSSmartTagsPreventParsing</name>
+      <content>true</content>
+    </tag>
+  </meta>
+
+  <session>
+      <timeout>900</timeout>
+  </session>
+
+  <database>
+    <username>db_user</username>
+    <password>db_user_password</password>
+    <host>localhost</host>
+    <name>recipes</name>
+  </database>
+
+  <form_fields>
+   <order>
+     <field>name</field>
+     <field>ingredients</field>
+     <field>directions</field>
+     <field>notes</field>
+     <field>original_source</field>
+     <field>food_type</field>
+     <field>rating</field>
+   </order>
+   <field>
+     <label>Original Source:</label>
+     <name>original_source</name>
+     <type>function</type>
+     <add_function>print_origins</add_function>
+     <view_function>get_original_source</view_function>
+     <edit_function>print_edit_origins</edit_function>
+     <field_ignore>0</field_ignore>
+   </field>
+   <field>
+     <label>Food Type:</label>
+     <name>food_type</name>
+     <type>function</type>
+     <add_function>print_types</add_function>
+     <view_function>get_food_type</view_function>
+     <edit_function>print_edit_types</edit_function>
+     <field_ignore>0</field_ignore>
+   </field>
+   <field>
+     <label>Name:</label>
+     <name>name</name>
+     <type>textfield</type>
+     <size>64</size>
+     <maxlength>96</maxlength>
+   </field>
+   <field>
+     <label>Ingredients:</label>
+     <name>ingredients</name>
+     <type>textarea</type>
+     <rows>24</rows>
+     <columns>64</columns>
+   </field>
+   <field>
+     <label>Directions:</label>
+     <name>directions</name>
+     <type>textarea</type>
+     <rows>24</rows>
+     <columns>64</columns>
+   </field>
+   <field>
+     <label>Notes:</label>
+     <name>notes</name>
+     <type>textarea</type>
+     <rows>24</rows>
+     <columns>64</columns>
+   </field>
+   <field>
+     <label>Rating:</label>
+     <name>rating</name>
+     <type>radio_group</type>
+     <default>5</default>
+     <field_ignore>0</field_ignore>
+     <radio_values>
+       <radio_value>
+        <label>1 - Awful</label>
+        <value>1</value>
+       </radio_value>
+       <radio_value>
+        <label>2</label>
+        <value>2</value>
+       </radio_value>
+       <radio_value>
+        <label>3</label>
+        <value>3</value>
+       </radio_value>
+       <radio_value>
+        <label>4</label>
+        <value>4</value>
+       </radio_value>
+       <radio_value>
+        <label>5</label>
+        <value>5</value>
+       </radio_value>
+       <radio_value>
+        <label>6</label>
+        <value>6</value>
+       </radio_value>
+       <radio_value>
+        <label>7</label>
+        <value>7</value>
+       </radio_value>
+       <radio_value>
+        <label>8</label>
+        <value>8</value>
+       </radio_value>
+       <radio_value>
+        <label>9</label>
+        <value>9</value>
+       </radio_value>
+       <radio_value>
+        <label>10 - Sublime</label>
+        <value>10</value>
+       </radio_value>
+     </radio_values>
+     <linebreak>false</linebreak>
+   </field>
+  </form_fields>   
+
+  <css>
+    <not_logged_in>
+      body {  color: #000000;
+              background: #FFFFFF;
+              font-family:  Verdana, Garamond, sans-serif }
+      :link { color: #0000FF }
+      :visited { color: #9933FF }
+      :active { color: #9933FF }
+      a:hover { color: #FF9933 }
+      p.logout { text-align: center;
+                 color:  #0000FF }
+      p.login-error { text-align: center;
+                      color: #FF0000; }
+    </not_logged_in>
+    <logged_in>
+      body { color: #000000; 
+             background: #FFFFFF;
+             font-family:  Verdana, Garamond, sans-serif }
+      :link { color: #0000FF }  
+      :visited { color: #9933FF }
+      :active { color: #9933FF } 
+      a:hover { color: #FF9933 } 
+      b.royalblue { color: #0000FF }
+      .brightred { color: #FF0000 }
+      p.delete-confirm { color: #FF0000;
+                         font-weight: bold; }
+      b.green { color:  #006600 }
+      a.plain { text-decoration: none }
+      pre { font: 16px "Courier New",Courier,monospace }
+      p.center-align { text-align: center}
+      p.password-match-error { text-align: center;
+                               color: #FF0000; }
+      h2.title { text-align: center;
+                 color:  #0099CC } 
+      tr.association-table-header { background: #FFFF00 }
+      tr.even-lines { background:  #CCFFCC;
+                      color: #000000 }
+      tr.odd-lines { background: #99CCFF;
+                     color: #000000 }
+      tr.menu-lines { text-align: center; }
+      h1.main-title { text-align: center; 
+                      color:  #0099CC }
+      h3.recipe-title { text-align: center; }
+      td.recipe-add-label { text-align: right }
+      td.recipe-add-field { text-align: left }
+      p.verify-errors { text-align: left;
+                        color: #FF0000;
+                        font-weight: bold; }
+      p.no-id-found { text-align: center;
+                      color: #FF0000;
+                      font-weight: bold; }
+     li.verify-errors { text-align: left;
+                        color: #FF0000;
+                        font-weight: bold; }
+     p.password-change-explanation { color:  #006633 }
+     li.password-change-explanation { color: #006633 }
+     div.page-navigation { text-align: right;
+                         font-size: 75% }
+     div.buttons { text-align: left; }
+     p.right-align-small { text-align: right;
+                           font-size: 75% }
+     p.action-confirm { color: #FF0000;
+                        font-weight: bold; }
+                                     
+    </logged_in>
+  </css>
+
+</config>
+  

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<config>
+
+  <buttons>
+    <back_js>Back</back_js>
+    <main_menu>Main Menu</main_menu>
+    <save>Save</save>
+    <reset>Reset</reset>
+    <cancel>Cancel</cancel>
+    <add>Add</add>
+    <edit>Edit</edit>
+    <delete>Delete</delete>
+    <submit>Submit</submit>
+    <menu>Menu</menu>
+    <login>Login</login>
+    <add_js>Add</add_js>
+    <view>View</view>
+    <new_search>New Search</new_search>
+    <search>Search</search>
+  </buttons>
+</config>
+  
